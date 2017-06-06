@@ -1,3 +1,0 @@
-var _user$project$Maths$factorial = function (n) {
-	return (_elm_lang$core$Native_Utils.cmp(n, 2) < 0) ? 1 : (n * _user$project$Maths$factorial(n - 1));
-};
