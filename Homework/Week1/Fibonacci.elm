@@ -16,32 +16,32 @@ test = test1
     && test10
 
 test1 : Bool
-test1 = factorial 1 == 1
+test1 = fibonacci 1 == 1
 
 test2 : Bool
-test2 = factorial 2 == 1
+test2 = fibonacci 2 == 1
 
 test3 : Bool
-test3 = factorial 3 == 2
+test3 = fibonacci 3 == 2
 
 test4 : Bool
-test4 = factorial 4 == 3
+test4 = fibonacci 4 == 3
 
 test5 : Bool
-test5 = factorial 5 == 5
+test5 = fibonacci 5 == 5
 
 test6 : Bool
-test6 = factorial 6 == 8
+test6 = fibonacci 6 == 8
 
 test7 : Bool
-test7 = factorial 7 == 13
+test7 = fibonacci 7 == 13
 
 test8 : Bool
-test8 = factorial 8 == 21
+test8 = fibonacci 8 == 21
 
 test9 : Bool
-test9 = factorial 9 == 34
+test9 = fibonacci 9 == 34
 
 test10 : Bool
-test10 = factorial 10 == 55
+test10 = fibonacci 10 == 55
 
