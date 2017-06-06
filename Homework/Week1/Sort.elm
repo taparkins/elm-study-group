@@ -1,6 +1,6 @@
 module Sort exposing (..)
 
-sort : [Int] -> [Int]
+sort : List Int -> List Int
 sort list = list
 
 test = testEmptyList
