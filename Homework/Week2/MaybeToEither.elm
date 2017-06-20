@@ -1,4 +1,4 @@
-module MaybeToEither epxosing (..)
+module MaybeToEither exposing (..)
 
 import Customer
 
