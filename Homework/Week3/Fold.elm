@@ -21,10 +21,10 @@ testFoldSingletonListEmptyStart : Bool
 testFoldSingletonListEmptyStart = (fold String.append "" ["abc"]) == "abc"
 
 testFoldSingletonListNonEmptyStart : Bool
-testFoldSingletonListNonEmptyStart = (fold String.append "Hello" ["abc"]) == "Helloabc"
+testFoldSingletonListNonEmptyStart = (fold String.append "Hello" ["abc"]) == "abcHello"
 
 testFoldMultipleListEmptyStart : Bool
 testFoldMultipleListEmptyStart = (fold String.append "" ["abc", "123", "world"]) == "abc123world"
 
 testFoldMultipleListNonEmptyStart : Bool
-testFoldMultipleListNonEmptyStart = (fold String.append "" ["abc", "123", "world"]) == "abc123world"
+testFoldMultipleListNonEmptyStart = (fold String.append "Hello" ["abc", "123", "world"]) == "abc123worldHello"
