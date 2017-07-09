@@ -1,4 +1,4 @@
-module Customer exposing (..)
+module Homework.Week2.Customer exposing (..)
 
 type alias Customer =
     { firstName : String

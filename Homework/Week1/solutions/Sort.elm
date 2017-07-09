@@ -1,4 +1,4 @@
-module Sort exposing (..)
+module Homework.Week1.Solutions.Sort exposing (..)
 
 -- We're using a quicksort implementation here
 sort : List Int -> List Int

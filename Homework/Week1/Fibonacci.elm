@@ -1,4 +1,4 @@
-module Fibonacci exposing (..)
+module Homework.Week1.Fibonacci exposing (..)
 
 fibonacci : Int -> Int
 fibonacci n = 0

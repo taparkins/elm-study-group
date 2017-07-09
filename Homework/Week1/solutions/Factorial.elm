@@ -1,4 +1,4 @@
-module Factorial exposing (..)
+module Homework.Week1.Solutions.Factorial exposing (..)
 
 factorial : Int -> Int
 factorial n =

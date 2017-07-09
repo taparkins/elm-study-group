@@ -1,9 +1,11 @@
-module Homework.Week3.FlatMap exposing (..)
+module Homework.Week3.Solutions.FlatMap exposing (..)
 
 import Arithmetic
 
 flatMap : (a -> List b) -> List a -> List b
-flatMap transform list = []
+flatMap transform list =
+    List.map transform list
+        |> List.foldr (++) []
 
 test : Bool
 test = testEmptyList

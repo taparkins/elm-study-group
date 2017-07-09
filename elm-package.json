@@ -5,7 +5,9 @@
     "license": "BSD3",
     "source-directories": [
         ".",
-        "Homework/Week1"
+        "Homework/Week1",
+        "Homework/Week2",
+        "Homework/Week3"
     ],
     "exposed-modules": [],
     "dependencies": {

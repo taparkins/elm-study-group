@@ -1,9 +1,15 @@
-module Homework.Week3.Filter exposing (..)
+module Homework.Week3.Solutions.Filter exposing (..)
 
 import Arithmetic
 
 filter : (a -> Bool) -> List a -> List a
-filter predicate list = list
+filter predicate list =
+    let build x acc =
+        if predicate x
+        then x::acc
+        else acc
+    in
+       List.foldr build [] list
 
 test : Bool
 test = testEmptyList

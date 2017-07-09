@@ -1,4 +1,4 @@
-module MaybeToEither exposing (..)
+module Homework.Week2.MaybeToEither exposing (..)
 
 import Customer
 

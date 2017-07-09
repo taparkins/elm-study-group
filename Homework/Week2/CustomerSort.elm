@@ -1,4 +1,4 @@
-module CustomerSort exposing (..)
+module Homework.Week2.CustomerSort exposing (..)
 
 import Customer exposing (Customer)
 

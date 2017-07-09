@@ -1,7 +1,19 @@
-module Homework.Week3.Fold exposing (..)
+module Homework.Week3.Solutions.Fold exposing (..)
 
 fold : (a -> b -> b) -> b -> List a -> b
-fold func start list = start
+fold = foldr
+
+foldl : (a -> b -> b) -> b -> List a -> b
+foldl func start list =
+    case list of
+        []      -> start
+        x::rest -> foldl func (func x start) rest
+
+foldr : (a -> b -> b) -> b -> List a -> b
+foldr func start list =
+    case list of
+        []      -> start
+        x::rest -> func x (foldr func start rest)
 
 test : Bool
 test = testFoldEmptyListEmptyStart

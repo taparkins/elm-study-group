@@ -1,4 +1,4 @@
-module Sort exposing (..)
+module Homework.Week1.Sort exposing (..)
 
 sort : List Int -> List Int
 sort list = list

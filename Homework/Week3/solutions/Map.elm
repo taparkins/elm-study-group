@@ -1,7 +1,10 @@
-module Homework.Week3.Map exposing (..)
+module Homework.Week3.Solutions.Map exposing (..)
 
 map : (a -> b) -> List a -> List b
-map func list = []
+map func list =
+    case list of
+        []      -> []
+        x::rest -> (func x)::(map func rest)
 
 test : Bool
 test = testMapEmptyList
