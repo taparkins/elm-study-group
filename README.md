@@ -14,4 +14,10 @@ To get started, do three things:
 
 `elm-package install elm-lang/html`
 
-Then you should be able to open `elm-repl` and get started!
+4. Setup yarn/webpack
+
+`yarn install`
+
+For Weeks 1-3, enter `elm-repl` to get started!
+
+For Weeks 4 and on, run `yarn client` and go to `localhost:3000` to get started!
