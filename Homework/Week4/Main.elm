@@ -7,28 +7,20 @@ type alias Model = {}
 initModel : Model
 initModel = {}
 
-type Msg = NoOp
-
-
-init : (Model, Cmd Msg)
+init : (Model, Cmd msg)
 init = (initModel, Cmd.none)
 
 
-view : Model -> Html.Html Msg
+view : Model -> Html.Html msg
 view model = Html.div [] [ Html.text "Hello World" ]
 
 
-update : Msg -> Model -> (Model, Cmd Msg)
-update msg model =
-    case msg of
-        NoOp -> (model, Cmd.none)
-
-
-main : Program Never Model Msg
+main : Program Never Model msg
 main = Html.program
     { init = init
     , view = view
-    , update = update
-    -- Feel free to disregard subscriptions for now; we'll come back to those another week
+    -- Feel free to disregard update for now; we'll come back to that next week
+    , update = \msg model -> (model, Cmd.none)
+    -- Feel free to disregard subscriptions altogether; it's an advanced topic that isn't super important
     , subscriptions = \model -> Sub.none
     }
