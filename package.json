@@ -1,0 +1,24 @@
+{
+  "name": "study_group",
+  "version": "1.0.0",
+  "description": "A simple Elm project designed to teach and explore the Elm language and framework",
+  "main": "index.js",
+  "repository": "git@github.com:aparkins/elm-study-group.git",
+  "author": "Aric Parkinson <aric.parkinson@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ace-css": "1.1",
+    "css-loader": "^0.28.4",
+    "elm-webpack-loader": "^4.3.1",
+    "file-loader": "^0.11.2",
+    "font-awesome": "4",
+    "navigo": "^5.2.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "scripts": {
+    "client": "webpack-dev-server --port 3000"
+  }
+}
