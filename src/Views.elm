@@ -52,16 +52,31 @@ introductionView = Html.div
 linksView : Html.Html Models.Msg
 linksView = Html.div
     [ Attributes.style
-        [ ("width", "150px")
-        , ("text-align", "center")
+        [ ("width", "250px")
+        , ("text-align", "left")
         , ("margin", "0 auto")
         , ("font-size", "18px")
         ]
     ]
     [ Html.ul []
-        [ Html.li [] [ Html.a [ Attributes.href "#week4"] [ Html.text "Week 4" ] ]
---        , Html.li [] [ Html.a [ Attributes.href "#week5"] [ Html.text "Week 5" ] ]
---        , Html.li [] [ Html.a [ Attributes.href "#week6"] [ Html.text "Week 6" ] ]
+        [ Html.li []
+            [ Html.a [ Attributes.href "#week4"] [ Html.text "Week 4" ]
+--            , Html.text "("
+--            , Html.a [ Attributes.href "#week4/solution"] [ Html.text "Solution" ]
+--            , Html.text ")"
+            ]
+--        , Html.li []
+--            [ Html.a [ Attributes.href "#week5"] [ Html.text "Week 5" ]
+--            , Html.text "("
+--            , Html.a [ Attributes.href "#week5/solution"] [ Html.text "Solution" ]
+--            , Html.text ")"
+--            ]
+--        , Html.li []
+--            [ Html.a [ Attributes.href "#week6"] [ Html.text "Week 6" ]
+--            , Html.text "("
+--            , Html.a [ Attributes.href "#week6/solution"] [ Html.text "Solution" ]
+--            , Html.text ")"
+--            ]
         ]
     ]
 
