@@ -20,4 +20,4 @@ To get started, do three things:
 
 For Weeks 1-3, enter `elm-repl` to get started!
 
-For Weeks 4 and on, run `yarn client` and go to `localhost:3000` to get started!
+For Weeks 4 and on, run `yarn start` and go to `localhost:3000` to get started!
