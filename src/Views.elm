@@ -67,9 +67,9 @@ linksView = Html.div
             ]
         , Html.li []
             [ Html.a [ Attributes.href "#week5"] [ Html.text "Week 5" ]
---            , Html.text "("
---            , Html.a [ Attributes.href "#week5/solution"] [ Html.text "Solution" ]
---            , Html.text ")"
+            , Html.text "("
+            , Html.a [ Attributes.href "#week5/solution"] [ Html.text "Solution" ]
+            , Html.text ")"
             ]
 --        , Html.li []
 --            [ Html.a [ Attributes.href "#week6"] [ Html.text "Week 6" ]
