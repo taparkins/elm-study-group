@@ -1,4 +1,4 @@
-module Homework.Week5.Main exposing (..)
+module Homework.Week6.Main exposing (..)
 
 import Html
 
