@@ -42,18 +42,21 @@ function getSudokuBase() {
 }
 
 function scrambleSudoku(baseSudoku) {
-    const iterations = randInt(100);
+    const iterations = randInt(1000);
     for (var i; i < iterations; i++) {
         const choiceCount = 2;
-        var a = randInt(8);
-        var b = randIntInRange(a+1, 9);
+        var subGridIndex = randInt(3);
+        var a = randInt(2);
+        var b = randIntInRange(a+1, 3);
+        var x = (3 * subGridIndex) + a;
+        var y = (3 * subGridIndex) + y;
         switch (randInt(choiceCount)) {
             case 1:
-                swapRows(baseSudoku, a, b);
+                swapRows(baseSudoku, x, y);
                 break;
             default:
             case 2:
-                swapCols(baseSudoku, a, b);
+                swapCols(baseSudoku, x, y);
                 break;
         }
     }
