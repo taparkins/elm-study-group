@@ -102,6 +102,7 @@ app.get('/sudoku/', (req, res) => {
     const baseSudoku = getSudokuBase();
     const scrambled = scrambleSudoku(baseSudoku);
     const filtered = filterNumbers(scrambled);
+    res.set('Access-Control-Allow-Origin', '*');
     res.send(JSON.stringify(filtered));
 });
 
