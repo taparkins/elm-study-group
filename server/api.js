@@ -26,6 +26,15 @@ function swapCols(grid, y1, y2) {
     }
 }
 
+function containsResult(results, x, y) {
+    for (var k = 0; k < results.length; k++) {
+        if (results[k].x == x && results[k].y == y) {
+            return true;
+        }
+    }
+    return false;
+}
+
 
 function getSudokuBase() {
     return [
@@ -71,6 +80,12 @@ function filterNumbers(scrambled) {
             for (var j = 0; j < indexSets.length; j++) {
                 const x = indexSets[i][randInt(3)];
                 const y = indexSets[j][randInt(3)];
+
+                // If we've already visited this specific point, just try again
+                if (containsResult(results, x, y)) {
+                    j--;
+                    continue;
+                }
 
                 results.push({
                     'x': x,
