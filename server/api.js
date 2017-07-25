@@ -105,6 +105,10 @@ app.get('/sudoku/', (req, res) => {
     res.send(JSON.stringify(filtered));
 });
 
+app.get('/echo/:msg/', (req, res) => {
+    res.send(req.params.msg);
+});
+
 
 console.log('Listening on port 4000:');
 app.listen(4000);
